@@ -12,6 +12,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Kirby's property tracker!</h1>
+        <div className={styles.newRowContainer}>
+          <button className={styles.newRowButton}>+ New Row</button>
+          <div className={styles.newRowFields}>
+            <div className={styles.address}></div>
+            <div className={styles.rent}></div>
+            <div className={styles.expenses}></div>
+          </div>
+        </div>
         <div className={styles.propertyContainer}>
           <Row></Row>
         </div>
