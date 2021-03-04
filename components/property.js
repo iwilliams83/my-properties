@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 
-function Row() {
+function Property() {
   return (
-    <div className={styles.row}>
+    <div className={styles.property}>
       <div className={styles.address}>I'm an address!</div>
       <div className={styles.money}>I'm rent!</div>
       <div className={styles.money}>I'm expenses!</div>
@@ -12,4 +12,4 @@ function Row() {
   );
 }
 
-export default Row;
+export default Property;

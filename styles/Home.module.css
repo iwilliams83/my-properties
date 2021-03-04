@@ -11,7 +11,7 @@
   border: solid black 1px;
 }
 
-.row {
+.property {
   border-bottom: solid gray 1px;
   height: 50px;
   display: flex;
@@ -27,5 +27,28 @@
 }
 
 .newRowContainer {
-  margin-bottom: 1rem;
+  margin-bottom: 8rem;
+}
+
+.newRowFields {
+  border: solid blue 1px;
+  height: 60px;
+}
+
+.newItemForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.newAddressForm {
+  display: flex;
+}
+
+.newAddressInput {
+  flex: 1;
+}
+
+.newRentForm {
+  display: flex;
+  justify-content: space-around;
 }

@@ -1,8 +1,14 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Row from "../components/row";
+import Property from "../components/property";
+import Input from "../components/input";
 
 export default function Home() {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log("Yay! The link was clicked.");
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,15 +19,15 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Kirby's property tracker!</h1>
         <div className={styles.newRowContainer}>
-          <button className={styles.newRowButton}>+ New Row</button>
+          <button className={styles.newRowButton} onClick={handleClick}>
+            + New Row
+          </button>
           <div className={styles.newRowFields}>
-            <div className={styles.address}></div>
-            <div className={styles.rent}></div>
-            <div className={styles.expenses}></div>
+            <Input></Input>
           </div>
         </div>
         <div className={styles.propertyContainer}>
-          <Row></Row>
+          <Property></Property>
         </div>
       </main>
     </div>
